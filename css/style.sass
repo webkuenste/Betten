@@ -1,0 +1,194 @@
+$primary_color: #ffffff
+$secondary_color: #F46606
+
+body
+	font-family: 'Open Sans', sans-serif
+	font-size: 12px
+	margin-bottom: 0
+
+::selection
+	background: $secondary_color
+	color: $primary_color
+
+::-moz-selection
+	background: $secondary_color
+	color: $primary_color
+
+#logo
+	background: url("../img/logo.png")
+		size: contain
+		repeat: no-repeat
+	display: block
+	float: left
+	height: 65px
+	margin: 28px 0
+	width: 65px
+
+#logo_text
+	color: $secondary_color
+	font-size: 18px
+	margin-left: 74px
+	margin-top: 6px
+
+#promo_text
+	position: absolute
+	left: 50vw
+	top: 48px
+	transform: rotate(-3deg) translate(-50%, -50%)
+
+#opening_times
+	float: right
+	font-size: 12px
+	margin-top: 28px
+
+#menu_small, 
+#menu_full
+	clear: both
+	float: left
+	font-size: 14px
+	font-weight: 600
+	text-transform: uppercase
+
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+
+		li
+			cursor: pointer
+			display: inline-block
+			margin: 0 10px
+
+#menu_small
+	display: none
+
+#site_title
+	font-size: 16px
+	font-weight: 600
+	margin: 40px auto
+	text-align: center
+	text-transform: uppercase
+	width: 80%
+
+.gallery
+	clear: both
+	img
+		width: 100%
+	
+hr
+	max-width: 960px
+	width: 95%
+
+#text_description
+	font-size: 12px
+	margin: 40px auto
+	max-width: 960px
+	text-align: center
+	width: 95%
+
+#contact_title
+	margin: 40px auto
+	text-align: center
+	text-transform: uppercase
+
+#contact_description
+	font-size: 12px
+	margin: 40px auto
+	text-align: center
+	width: 95%
+
+figure
+	margin: 0 auto
+	width: 140px
+
+	&:hover
+		figcaption
+			opacity: 1
+			transform: translateY(-34px)
+			visibility: visible
+
+#contact_image
+	background: url("../img/kontakt.jpg")
+		size: contain
+		repeat: no-repeat
+	height: 140px
+	margin: 0 auto
+	width: 140px
+
+figcaption
+	background: rgba(255,255,255,0.5)
+	font-size: 14px
+	opacity: 0
+	position: relative
+	text-align: center
+	transition: all 0.4s ease-in-out
+	visibility: hidden
+
+footer
+	background: $secondary_color
+	margin-top: 40px
+	margin-left: -8px
+	margin-right: -8px
+	padding: 20px 0
+	
+	#footer_text_wrapper
+		color: white
+		margin: 0 auto
+		max-width: 960px
+		width: 90%
+
+		#footer_ul
+			padding: 0
+
+			li
+				display: inline-block
+				margin: 0 40px 20px 0
+
+		#sitemap_ul
+			padding: 0
+			list-style-type: none
+
+			li
+				display: block
+				margin: 0 0
+
+			a
+				color: white
+				text-decoration: none
+
+				&:hover
+					text-decoration: underline
+
+		
+
+		#store_image
+			background: url("../img/betten.de_bett1.jpg")
+				size: contain
+				repeat: no-repeat
+			display: inline-block
+			height: 50px
+			width: 90%
+
+		hr
+			width: 960px
+			
+
+	::selection
+		background: $primary_color
+		color: $secondary_color
+
+	::-moz-selection
+		background: $primary_color
+		color: $secondary_color
+
+@media (max-width: 600px)
+	
+	#promo_text
+		display: none
+
+	#menu_full
+		display: none
+
+	#menu_small
+		cursor: pointer
+		display: inline-block
