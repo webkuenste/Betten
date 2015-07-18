@@ -12,7 +12,7 @@ body {
   color: #ffffff; }
 
 #logo {
-  background: url("../img/logo.png");
+  background: url("../img/logo.svg");
     background-size: contain;
     background-repeat: no-repeat;
   display: block;
