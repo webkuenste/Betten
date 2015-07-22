@@ -39,27 +39,6 @@ body {
   line-height: 22px;
   margin-top: 28px; }
 
-#menu_small,
-#menu_full {
-  clear: both;
-  float: left;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase; }
-  #menu_small ul,
-  #menu_full ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0; }
-    #menu_small ul li,
-    #menu_full ul li {
-      cursor: pointer;
-      display: inline-block;
-      margin-right: 10px; }
-
-#menu_small {
-  display: none; }
-
 #site_title {
   font-size: 16px;
   font-weight: 600;
@@ -167,14 +146,7 @@ footer {
 
 @media (max-width: 600px) {
   #promo_text {
-    display: none; }
-
-  #menu_full {
-    display: none; }
-
-  #menu_small {
-    cursor: pointer;
-    display: inline-block; } }
+    display: none; } }
 @media (max-width: 400px) {
   #opening_times {
     display: none; } }
